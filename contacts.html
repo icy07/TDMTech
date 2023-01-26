@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Контакты</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230126191215">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__ctn">
+				<div class="header__body">
+					<a href="index.html" class="header__logo">
+						<img src="img/logo.svg" alt="TDM TECH">
+					</a>
+					<nav class="header__nav" data-da=".menu__body, 840,first">
+						<ul class="header__ul">
+							<li class="header__li"><a href="about.html">О компании</a></li>
+							<li class="header__li"><a href="decisions.html">Решения</a></li>
+							<li class="header__li"><a href="team.html">Команда</a></li>
+							<li class="header__li"><a class="_active" href="contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__end">
+						<a href="tel:+74951505800" class="header__phone">+7 (495) 150-58-00</a>
+						<a href="#" class="header__lang">Eng</a>
+					</div>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<div class="menu__body">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="how-to-reach">
+				<div class="how-to-reach__container">
+					<h1 class="how-to-reach__title title">
+						Как с нами <br> связаться
+					</h1>
+					<div class="how-to-reach__img">
+						<picture><source srcset="img/bgImages/cube3.webp" type="image/webp"><img src="img/bgImages/cube3.png" alt="Cubes"></picture>
+					</div>
+				</div>
+			</section>
+			<section class="second-form">
+				<div class="second-form__container">
+					<form action="#" class="second-form__form form">
+						<p class="form__title">
+							Форма обратной связи:
+						</p>
+						<div class="form__row">
+							<div class="form__input-wrapper">
+								<p class="form__inp-title">
+									Фамилия и Имя
+								</p>
+								<input autocomplete="off" data-required="" data-validate type="text" name="form[]" data-error="Введите имя и фамилию" placeholder="" class="form__input input">
+							</div>
+						</div>
+						<div class="form__row form__row--df">
+							<div class="form__input-wrapper">
+								<p class="form__inp-title">
+									Электронная почта
+								</p>
+								<input autocomplete="off" data-required="email" data-validate type="email" name="form[]" data-error="Введите почту" placeholder="someone@email.com" class="form__input input">
+							</div>
+							<div class="form__input-wrapper">
+								<p class="form__inp-title">
+									Телефон
+								</p>
+								<input autocomplete="off" data-required="" data-validate type="text" name="form[]" data-error="Укажите телефон в верном формате" placeholder="+7 (___) ___-____" class="form__input input phone-input">
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__input-wrapper">
+								<p class="form__inp-title">
+									Сообщение
+								</p>
+								<input autocomplete="off" data-required="" data-validate type="text" name="form[]" data-error="Укажите сообщение" placeholder="Docker" class="form__input input">
+							</div>
+						</div>
+						<input type="submit" name="form[]" class="form__btn orange-btn" value="Отправить">
+					</form>
+					<div class="second-form__phone-block">
+						<p class="second-form__phone-title">
+							Телефон
+						</p>
+						<a href="tel:+74951505800" class="second-form__phone">+7 (495) 150-58-00</a>
+					</div>
+					<div class="second-form__img">
+						<picture><source srcset="img/bgImages/cube4.webp" type="image/webp"><img src="img/bgImages/cube4.png" alt="Cubes"></picture>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230126191215"></script>
+</body>
+
+</html>
