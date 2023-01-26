@@ -1127,6 +1127,17 @@ body {
   margin: 1.875rem 0px 0px 0px;
   float: right;
   align-self: flex-end;
+  transform-origin: bottom right;
+}
+@media (max-width: 40.625em) {
+  .tabs__card-img {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 25em) {
+  .tabs__card-img {
+    transform: scale(0.6);
+  }
 }
 .tabs__card-img img {
   max-width: 100%;
@@ -1212,6 +1223,31 @@ body {
 }
 .tabs__dark-img img {
   max-width: 100%;
+}
+@media (min-width: 76.875em) {
+  .tabs__dark-img img {
+    height: 37.4375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 76.875em) {
+  @supports (height: clamp( 15.625rem , 7.9546703297rem  +  38.3516483516vw , 37.4375rem )) {
+    .tabs__dark-img img {
+      height: clamp( 15.625rem , 7.9546703297rem  +  38.3516483516vw , 37.4375rem );
+    }
+  }
+  @supports not (height: clamp( 15.625rem , 7.9546703297rem  +  38.3516483516vw , 37.4375rem )) {
+    .tabs__dark-img img {
+      height: calc(15.625rem + 21.8125 * (100vw - 20rem) / 56.875);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .tabs__dark-img img {
+    height: 15.625rem;
+  }
+}
+.tabs__dark-img-right {
+  transform: translateX(1.25rem);
 }
 @media (min-width: 76.875em) {
   .tabs__dark-text {
