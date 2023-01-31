@@ -3198,75 +3198,340 @@ body {
   background-color: rgba(255, 122, 0, 0.9);
   opacity: 0;
   visibility: hidden;
+  padding: 0.3125rem;
 }
 .team__name {
   line-height: 1.1428571429;
   font-weight: 700;
 }
-@media (min-width: 76.875em) {
+@media (min-width: 75em) {
   .team__name {
-    font-size: 1.75rem;
+    font-size: 1.375rem;
   }
 }
-@media (min-width: 20em) and (max-width: 76.875em) {
-  @supports (font-size: clamp( 1rem , 0.7362637363rem  +  1.3186813187vw , 1.75rem )) {
+@media (min-width: 45em) and (max-width: 75em) {
+  @supports (font-size: clamp( 0.75rem , -0.1875rem  +  2.0833333333vw , 1.375rem )) {
     .team__name {
-      font-size: clamp( 1rem , 0.7362637363rem  +  1.3186813187vw , 1.75rem );
+      font-size: clamp( 0.75rem , -0.1875rem  +  2.0833333333vw , 1.375rem );
     }
   }
-  @supports not (font-size: clamp( 1rem , 0.7362637363rem  +  1.3186813187vw , 1.75rem )) {
+  @supports not (font-size: clamp( 0.75rem , -0.1875rem  +  2.0833333333vw , 1.375rem )) {
     .team__name {
-      font-size: calc(1rem + 0.75 * (100vw - 20rem) / 56.875);
+      font-size: calc(0.75rem + 0.625 * (100vw - 45rem) / 30);
     }
   }
 }
-@media (max-width: 20em) {
+@media (max-width: 45em) {
+  .team__name {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 75em) {
+  .team__name {
+    margin-bottom: 0.625rem;
+  }
+}
+@media (min-width: 45em) and (max-width: 75em) {
+  @supports (margin-bottom: clamp( 0.125rem , -0.625rem  +  1.6666666667vw , 0.625rem )) {
+    .team__name {
+      margin-bottom: clamp( 0.125rem , -0.625rem  +  1.6666666667vw , 0.625rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 0.125rem , -0.625rem  +  1.6666666667vw , 0.625rem )) {
+    .team__name {
+      margin-bottom: calc(0.125rem + 0.5 * (100vw - 45rem) / 30);
+    }
+  }
+}
+@media (max-width: 45em) {
+  .team__name {
+    margin-bottom: 0.125rem;
+  }
+}
+@media (max-width: 45em) and (min-width: 45em) {
   .team__name {
     font-size: 1rem;
   }
 }
-@media (min-width: 76.875em) {
+@media (max-width: 45em) and (min-width: 26.875em) and (max-width: 45em) {
+  @supports (font-size: clamp( 0.75rem , 0.3793103448rem  +  1.3793103448vw , 1rem )) {
+    .team__name {
+      font-size: clamp( 0.75rem , 0.3793103448rem  +  1.3793103448vw , 1rem );
+    }
+  }
+  @supports not (font-size: clamp( 0.75rem , 0.3793103448rem  +  1.3793103448vw , 1rem )) {
+    .team__name {
+      font-size: calc(0.75rem + 0.25 * (100vw - 26.875rem) / 18.125);
+    }
+  }
+}
+@media (max-width: 45em) and (max-width: 26.875em) {
   .team__name {
-    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
   }
 }
-@media (min-width: 20em) and (max-width: 76.875em) {
-  @supports (margin-bottom: clamp( 0.3125rem , -0.1050824176rem  +  2.0879120879vw , 1.5rem )) {
+@media (max-width: 45em) and (min-width: 45em) {
+  .team__name {
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 45em) and (min-width: 26.875em) and (max-width: 45em) {
+  @supports (margin-bottom: clamp( 0.125rem , -0.4310344828rem  +  2.0689655172vw , 0.5rem )) {
     .team__name {
-      margin-bottom: clamp( 0.3125rem , -0.1050824176rem  +  2.0879120879vw , 1.5rem );
+      margin-bottom: clamp( 0.125rem , -0.4310344828rem  +  2.0689655172vw , 0.5rem );
     }
   }
-  @supports not (margin-bottom: clamp( 0.3125rem , -0.1050824176rem  +  2.0879120879vw , 1.5rem )) {
+  @supports not (margin-bottom: clamp( 0.125rem , -0.4310344828rem  +  2.0689655172vw , 0.5rem )) {
     .team__name {
-      margin-bottom: calc(0.3125rem + 1.1875 * (100vw - 20rem) / 56.875);
+      margin-bottom: calc(0.125rem + 0.375 * (100vw - 26.875rem) / 18.125);
     }
   }
 }
-@media (max-width: 20em) {
+@media (max-width: 45em) and (max-width: 26.875em) {
+  .team__name {
+    margin-bottom: 0.125rem;
+  }
+}
+@media (max-width: 26.875em) and (min-width: 26.875em) {
+  .team__name {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 26.875em) and (min-width: 20em) and (max-width: 26.875em) {
+  @supports (font-size: clamp( 0.9375rem , 0.0284090909rem  +  4.5454545455vw , 1.25rem )) {
+    .team__name {
+      font-size: clamp( 0.9375rem , 0.0284090909rem  +  4.5454545455vw , 1.25rem );
+    }
+  }
+  @supports not (font-size: clamp( 0.9375rem , 0.0284090909rem  +  4.5454545455vw , 1.25rem )) {
+    .team__name {
+      font-size: calc(0.9375rem + 0.3125 * (100vw - 20rem) / 6.875);
+    }
+  }
+}
+@media (max-width: 26.875em) and (max-width: 20em) {
+  .team__name {
+    font-size: 0.9375rem;
+  }
+}
+@media (max-width: 26.875em) and (min-width: 26.875em) {
+  .team__name {
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 26.875em) and (min-width: 20em) and (max-width: 26.875em) {
+  @supports (margin-bottom: clamp( 0.3125rem , -0.2329545455rem  +  2.7272727273vw , 0.5rem )) {
+    .team__name {
+      margin-bottom: clamp( 0.3125rem , -0.2329545455rem  +  2.7272727273vw , 0.5rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 0.3125rem , -0.2329545455rem  +  2.7272727273vw , 0.5rem )) {
+    .team__name {
+      margin-bottom: calc(0.3125rem + 0.1875 * (100vw - 20rem) / 6.875);
+    }
+  }
+}
+@media (max-width: 26.875em) and (max-width: 20em) {
   .team__name {
     margin-bottom: 0.3125rem;
   }
 }
-@media (min-width: 76.875em) {
+@media (min-width: 75em) {
   .team__job {
-    font-size: 1.375rem;
+    font-size: 1.125rem;
   }
 }
-@media (min-width: 20em) and (max-width: 76.875em) {
-  @supports (font-size: clamp( 0.875rem , 0.6991758242rem  +  0.8791208791vw , 1.375rem )) {
+@media (min-width: 45em) and (max-width: 75em) {
+  @supports (font-size: clamp( 0.625rem , -0.125rem  +  1.6666666667vw , 1.125rem )) {
     .team__job {
-      font-size: clamp( 0.875rem , 0.6991758242rem  +  0.8791208791vw , 1.375rem );
+      font-size: clamp( 0.625rem , -0.125rem  +  1.6666666667vw , 1.125rem );
     }
   }
-  @supports not (font-size: clamp( 0.875rem , 0.6991758242rem  +  0.8791208791vw , 1.375rem )) {
+  @supports not (font-size: clamp( 0.625rem , -0.125rem  +  1.6666666667vw , 1.125rem )) {
     .team__job {
-      font-size: calc(0.875rem + 0.5 * (100vw - 20rem) / 56.875);
+      font-size: calc(0.625rem + 0.5 * (100vw - 45rem) / 30);
     }
   }
 }
-@media (max-width: 20em) {
+@media (max-width: 45em) {
+  .team__job {
+    font-size: 0.625rem;
+  }
+}
+@media (min-width: 75em) {
+  .team__job {
+    margin-bottom: 0.625rem;
+  }
+}
+@media (min-width: 45em) and (max-width: 75em) {
+  @supports (margin-bottom: clamp( 0.125rem , -0.625rem  +  1.6666666667vw , 0.625rem )) {
+    .team__job {
+      margin-bottom: clamp( 0.125rem , -0.625rem  +  1.6666666667vw , 0.625rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 0.125rem , -0.625rem  +  1.6666666667vw , 0.625rem )) {
+    .team__job {
+      margin-bottom: calc(0.125rem + 0.5 * (100vw - 45rem) / 30);
+    }
+  }
+}
+@media (max-width: 45em) {
+  .team__job {
+    margin-bottom: 0.125rem;
+  }
+}
+@media (max-width: 45em) and (min-width: 45em) {
   .team__job {
     font-size: 0.875rem;
+  }
+}
+@media (max-width: 45em) and (min-width: 26.875em) and (max-width: 45em) {
+  @supports (font-size: clamp( 0.625rem , 0.2543103448rem  +  1.3793103448vw , 0.875rem )) {
+    .team__job {
+      font-size: clamp( 0.625rem , 0.2543103448rem  +  1.3793103448vw , 0.875rem );
+    }
+  }
+  @supports not (font-size: clamp( 0.625rem , 0.2543103448rem  +  1.3793103448vw , 0.875rem )) {
+    .team__job {
+      font-size: calc(0.625rem + 0.25 * (100vw - 26.875rem) / 18.125);
+    }
+  }
+}
+@media (max-width: 45em) and (max-width: 26.875em) {
+  .team__job {
+    font-size: 0.625rem;
+  }
+}
+@media (max-width: 45em) and (min-width: 45em) {
+  .team__job {
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 45em) and (min-width: 26.875em) and (max-width: 45em) {
+  @supports (margin-bottom: clamp( 0.125rem , -0.4310344828rem  +  2.0689655172vw , 0.5rem )) {
+    .team__job {
+      margin-bottom: clamp( 0.125rem , -0.4310344828rem  +  2.0689655172vw , 0.5rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 0.125rem , -0.4310344828rem  +  2.0689655172vw , 0.5rem )) {
+    .team__job {
+      margin-bottom: calc(0.125rem + 0.375 * (100vw - 26.875rem) / 18.125);
+    }
+  }
+}
+@media (max-width: 45em) and (max-width: 26.875em) {
+  .team__job {
+    margin-bottom: 0.125rem;
+  }
+}
+@media (max-width: 26.875em) and (min-width: 26.875em) {
+  .team__job {
+    font-size: 1.0625rem;
+  }
+}
+@media (max-width: 26.875em) and (min-width: 20em) and (max-width: 26.875em) {
+  @supports (font-size: clamp( 0.8125rem , 0.0852272727rem  +  3.6363636364vw , 1.0625rem )) {
+    .team__job {
+      font-size: clamp( 0.8125rem , 0.0852272727rem  +  3.6363636364vw , 1.0625rem );
+    }
+  }
+  @supports not (font-size: clamp( 0.8125rem , 0.0852272727rem  +  3.6363636364vw , 1.0625rem )) {
+    .team__job {
+      font-size: calc(0.8125rem + 0.25 * (100vw - 20rem) / 6.875);
+    }
+  }
+}
+@media (max-width: 26.875em) and (max-width: 20em) {
+  .team__job {
+    font-size: 0.8125rem;
+  }
+}
+@media (max-width: 26.875em) and (min-width: 26.875em) {
+  .team__job {
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 26.875em) and (min-width: 20em) and (max-width: 26.875em) {
+  @supports (margin-bottom: clamp( 0.3125rem , -0.2329545455rem  +  2.7272727273vw , 0.5rem )) {
+    .team__job {
+      margin-bottom: clamp( 0.3125rem , -0.2329545455rem  +  2.7272727273vw , 0.5rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 0.3125rem , -0.2329545455rem  +  2.7272727273vw , 0.5rem )) {
+    .team__job {
+      margin-bottom: calc(0.3125rem + 0.1875 * (100vw - 20rem) / 6.875);
+    }
+  }
+}
+@media (max-width: 26.875em) and (max-width: 20em) {
+  .team__job {
+    margin-bottom: 0.3125rem;
+  }
+}
+@media (min-width: 75em) {
+  .team__bio {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 45em) and (max-width: 75em) {
+  @supports (font-size: clamp( 0.5rem , -0.0625rem  +  1.25vw , 0.875rem )) {
+    .team__bio {
+      font-size: clamp( 0.5rem , -0.0625rem  +  1.25vw , 0.875rem );
+    }
+  }
+  @supports not (font-size: clamp( 0.5rem , -0.0625rem  +  1.25vw , 0.875rem )) {
+    .team__bio {
+      font-size: calc(0.5rem + 0.375 * (100vw - 45rem) / 30);
+    }
+  }
+}
+@media (max-width: 45em) {
+  .team__bio {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 45em) and (min-width: 45em) {
+  .team__bio {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 45em) and (min-width: 26.875em) and (max-width: 45em) {
+  @supports (font-size: clamp( 0.5rem , 0.1293103448rem  +  1.3793103448vw , 0.75rem )) {
+    .team__bio {
+      font-size: clamp( 0.5rem , 0.1293103448rem  +  1.3793103448vw , 0.75rem );
+    }
+  }
+  @supports not (font-size: clamp( 0.5rem , 0.1293103448rem  +  1.3793103448vw , 0.75rem )) {
+    .team__bio {
+      font-size: calc(0.5rem + 0.25 * (100vw - 26.875rem) / 18.125);
+    }
+  }
+}
+@media (max-width: 45em) and (max-width: 26.875em) {
+  .team__bio {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 26.875em) and (min-width: 26.875em) {
+  .team__bio {
+    font-size: 0.9375rem;
+  }
+}
+@media (max-width: 26.875em) and (min-width: 20em) and (max-width: 26.875em) {
+  @supports (font-size: clamp( 0.6875rem , -0.0397727273rem  +  3.6363636364vw , 0.9375rem )) {
+    .team__bio {
+      font-size: clamp( 0.6875rem , -0.0397727273rem  +  3.6363636364vw , 0.9375rem );
+    }
+  }
+  @supports not (font-size: clamp( 0.6875rem , -0.0397727273rem  +  3.6363636364vw , 0.9375rem )) {
+    .team__bio {
+      font-size: calc(0.6875rem + 0.25 * (100vw - 20rem) / 6.875);
+    }
+  }
+}
+@media (max-width: 26.875em) and (max-width: 20em) {
+  .team__bio {
+    font-size: 0.6875rem;
   }
 }
 
