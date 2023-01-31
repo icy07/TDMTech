@@ -3273,7 +3273,6 @@
                     }));
                     showMoreBlocksRegular.length ? initItems(showMoreBlocksRegular) : null;
                     document.addEventListener("click", showMoreActions);
-                    window.addEventListener("resize", showMoreActions);
                     mdQueriesArray = dataMediaQueries(showMoreBlocks, "showmoreMedia");
                     if (mdQueriesArray && mdQueriesArray.length) {
                         mdQueriesArray.forEach((mdQueriesItem => {
