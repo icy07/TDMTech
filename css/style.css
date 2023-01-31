@@ -2503,7 +2503,7 @@ body {
 .about__img {
   position: absolute;
   z-index: -1;
-  top: 18%;
+  top: 15%;
   right: 0;
   transform-origin: right;
 }
@@ -2610,10 +2610,31 @@ body {
 }
 .about__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   row-gap: 1.875rem;
   column-gap: 5.625rem;
   max-width: 46.875rem;
+}
+@media (min-width: 76.875em) {
+  .about__list {
+    margin-bottom: 3.75rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 76.875em) {
+  @supports (margin-bottom: clamp( 1.25rem , 0.3708791209rem  +  4.3956043956vw , 3.75rem )) {
+    .about__list {
+      margin-bottom: clamp( 1.25rem , 0.3708791209rem  +  4.3956043956vw , 3.75rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 1.25rem , 0.3708791209rem  +  4.3956043956vw , 3.75rem )) {
+    .about__list {
+      margin-bottom: calc(1.25rem + 2.5 * (100vw - 20rem) / 56.875);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .about__list {
+    margin-bottom: 1.25rem;
+  }
 }
 @media (max-width: 37.5em) {
   .about__list {
@@ -2622,7 +2643,6 @@ body {
 }
 @media (max-width: 28.125em) {
   .about__list {
-    grid-template-columns: 1fr;
     row-gap: 0.9375rem;
   }
 }
@@ -2692,24 +2712,24 @@ body {
 }
 @media (min-width: 76.875em) {
   .about__adv {
-    margin-top: 11.25rem;
+    margin-top: 7.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 76.875em) {
-  @supports (margin-top: clamp( 3.125rem , 0.2678571429rem  +  14.2857142857vw , 11.25rem )) {
+  @supports (margin-top: clamp( 1.875rem , -0.103021978rem  +  9.8901098901vw , 7.5rem )) {
     .about__adv {
-      margin-top: clamp( 3.125rem , 0.2678571429rem  +  14.2857142857vw , 11.25rem );
+      margin-top: clamp( 1.875rem , -0.103021978rem  +  9.8901098901vw , 7.5rem );
     }
   }
-  @supports not (margin-top: clamp( 3.125rem , 0.2678571429rem  +  14.2857142857vw , 11.25rem )) {
+  @supports not (margin-top: clamp( 1.875rem , -0.103021978rem  +  9.8901098901vw , 7.5rem )) {
     .about__adv {
-      margin-top: calc(3.125rem + 8.125 * (100vw - 20rem) / 56.875);
+      margin-top: calc(1.875rem + 5.625 * (100vw - 20rem) / 56.875);
     }
   }
 }
 @media (max-width: 20em) {
   .about__adv {
-    margin-top: 3.125rem;
+    margin-top: 1.875rem;
   }
 }
 .about__adv-img {
